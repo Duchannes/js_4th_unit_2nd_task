@@ -49,7 +49,6 @@ dataAngular.forEach((name) => {
       addNewNote(name);
       expect(allNotes.count()).toBe(numOfNotes + 1);
       searchNote();
-      browser.sleep(15000);
       expect(allNotes.count()).toBe(1);
     });
 
